@@ -1,0 +1,32 @@
+/* CSS declarations go here */
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+#render-target > div {
+  height: 100%;
+}
+
+.map-holder {
+  height: 100%;
+}
+
+@media (max-width: 980px) {
+  .map-row {
+    height: auto;
+  }
+  .map-col {
+    height: 100px;
+  }
+}
+
+@media (min-width: 980px) {
+  .map-row {
+    height: calc(100% - 100px);
+  }
+  .map-col {
+    height: 100%;
+  }
+}
